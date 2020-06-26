@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Store HTML Table in JavaScript Variable</title> 
+</head> 
+<style>
+    div {
+        display: flex;
+    }
+    table, th, td {
+      border: 1px solid #808080;
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+    }
+    table img{
+        width: 70%;
+        vertical-align: middle;  
+    }
+    th, td {
+        padding: 10px;
+    }
+</style>
+<body>
+<div></div>
+    <script>
+    const table = '<table> '+
+    '<tr>'+
+      '<th>ID</th>'+
+      '<th>Username</th>'+
+      '<th>Profit($)</th>'+
+      '<th>Comission($)</th>'+
+      '<th>View</th>'+
+    '</tr>'+
+    '<tr>'+
+      '<td>10007</td>'+
+      '<td>Simona</td>'+
+      '<td>55</td>'+
+      '<td>Simona</td>'+
+      '<td><img src="menuIcon.png" alt="menuIcon.png"></td>'+
+   '</tr>'+
+    '<tr>'+
+      '<td>10008</td>'+
+      '<td>Ariana</td>'+
+      '<td>45</td>'+
+      '<td>Adelina</td>'+
+      '<td><img src="menuIcon.png" alt="menuIcon.png"></td>'+
+    '</tr>'+
+    '<tr>'+
+      '<td>10009</td>'+
+      '<td>Adam</td>'+
+      '<td>35</td>'+
+      '<td>Adam</td>'+
+      '<td><img src="menuIcon.png" alt="menuIcon.png"></td>'+
+    '</tr>'+
+    '<tr>'+
+      '<td>1010</td>'+
+      '<td>John</td>'+
+      '<td>25</td>'+
+      '<td>John</td>'+
+      '<td><img src="menuIcon.png" alt="menuIcon.png"></td>'+
+    '</tr>'+
+    '<tr>'+
+      '<td>1011</td>'+
+      '<td>Garry</td>'+
+      '<td>15</td>'+
+      '<td>Garry</td>'+
+      '<td><img src="menuIcon.png" alt="menuIcon.png"></td>'+
+    '</tr>'+
+  '</table>'
+
+    for(let i = 0; i < 3; i++) {
+        let divElement = document.createElement('div')
+        document.querySelector('div').appendChild(divElement).innerHTML = table
+    }
+   
+   </script> 
+</body>
+</html>
+
